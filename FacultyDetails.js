@@ -1,11 +1,10 @@
 import { Image, SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 import Ionicons from '@expo/vector-icons/Ionicons'
-import Pros from '../assets/pros.png'
+import image from '../assets/Pros.jpg'
 
 export default function FacultyDetails() {
-const image =
-   [{image:Pros}]
+
 
   return (
     <SafeAreaView>
@@ -14,7 +13,7 @@ const image =
       <Ionicons name='md-search' size={20} color='black' style= {{marginRight:20}}/>
       <Text style={styles.name}>faculty</Text>
       </View>
-      {/* <Image style={{height:'auto',width:'auto'}} source ={image}/> */}
+      <Image style={{height:'80%',width:'100%'}} source ={image}/>
     </SafeAreaView>
   
   )
